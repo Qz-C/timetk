@@ -9,6 +9,7 @@ import {
 
 import Icon from "react-native-vector-icons/MaterialIcons";
 import CurrentTaskCard from "../components/currentTaskCard/index"
+import TaskItems from  "../components/taskItems"
 
 const Home:FC = () => {
     return(
@@ -21,7 +22,7 @@ const Home:FC = () => {
             </View>
             
             <CurrentTaskCard/>
-            
+            <TaskItems/>
             <View style={styles.todayTasks}>
 
             </View>
@@ -46,14 +47,7 @@ const styles = StyleSheet.create({
         fontFamily: "Rubik-Medium", 
         color:'#070417',
         fontSize: 24
-    },
-    todayTasks:{
-
-    },
-    bottomMenu:{
-
     }
-
 })
 
 export default Home;
