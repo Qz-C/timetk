@@ -3,21 +3,25 @@ import React, {FC} from 'react';
 import {
     StyleSheet,
     Text,
+    TouchableHighlight,
     View
 } from "react-native";
 
 import Icon from "react-native-vector-icons/MaterialIcons";
+import CurrentTaskCard from "../components/currentTaskCard/index"
 
 const Home:FC = () => {
     return(
         <View style={styles.container}>
             <View style={styles.topMenu}>
                 <Text style={styles.title}> Task </Text>
-                <Icon name="more-vert" size={24} color="#828282"/>
+                <TouchableHighlight>
+                    <Icon name="more-horiz" size={24} color="#828282"/>
+                </TouchableHighlight>
             </View>
-            <View style={styles.ongoingTask}>
-
-            </View>
+            
+            <CurrentTaskCard/>
+            
             <View style={styles.todayTasks}>
 
             </View>
@@ -39,12 +43,9 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     title:{
-        fontFamily: "Rubik-Bold", 
+        fontFamily: "Rubik-Medium", 
         color:'#070417',
         fontSize: 24
-    },
-    ongoingTask:{
-
     },
     todayTasks:{
 
