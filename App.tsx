@@ -8,6 +8,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import { OpenRealmBehaviorType } from 'realm';
 
 import Home from './src/screens/home'
 

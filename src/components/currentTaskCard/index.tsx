@@ -7,7 +7,7 @@ import {
     View
 } from "react-native";
 
-import Icon from "react-native-vector-icons/MaterialIcons";
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import { AnimatedCircularProgress } from 'react-native-circular-progress' 
 
 const CurrentTaskCard:FC = () => {

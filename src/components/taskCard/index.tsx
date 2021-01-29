@@ -7,8 +7,8 @@ import {
     View
 } from "react-native";
 
-import Icon from "react-native-vector-icons/MaterialIcons";
-import {Chip} from "material-bread";
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import {Chip} from 'material-bread';
 
 const TaskCard:FC = () => {
     return(
