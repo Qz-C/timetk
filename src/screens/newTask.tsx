@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 
 import {
     StyleSheet,
-    Text,
     TouchableHighlight,
+    Text,
     View
 } from "react-native";
 
@@ -16,17 +16,10 @@ const Home: FC = () => {
 
     return (
         <View style={styles.container}>
-
-            <View style={styles.topMenu}>
-                <Text style={styles.title}> Task </Text>
-                <TouchableHighlight>
-                    <Icon name="more-horiz" size={24} color="#828282" />
-                </TouchableHighlight>
+            <View style={styles.content}>
+                <View style={styles.slider}></View> 
+                <View></View>
             </View>
-
-            <CurrentTaskCard />
-            <TaskItems />
-            <BottomBar />
         </View>
     )
 }
@@ -37,17 +30,22 @@ const styles = StyleSheet.create({
         height: '100%',
         backgroundColor: '#FAFAFF',
         justifyContent: 'space-between',
-        paddingHorizontal: 20,
-        paddingTop: 20
+        paddingTop: 50,
     },
-    topMenu: {
-        flexDirection: 'row',
-        justifyContent: 'space-between'
+    content: {
+        backgroundColor: '#ffffff',
+        width: '100%',
+        height: '100%',
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
+        alignItems: 'center'
+
     },
-    title: {
-        fontFamily: "Rubik-Medium",
-        color: '#070417',
-        fontSize: 24
+    slider: {
+        backgroundColor: '#E9E9FF',
+        width: 40,
+        height: 4,
+        marginTop: 10
     }
 })
 

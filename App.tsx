@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import { OpenRealmBehaviorType } from 'realm';
 
-import Home from './src/screens/home'
+import Home from './src/screens/newTask'
 
 const App:FC = () => {
   return (
